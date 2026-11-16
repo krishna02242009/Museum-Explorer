@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Visitor Experience</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Museum Explorer</div>
+
+        <nav>
+    <a href="index.html">Home</a>
+    <a href="interests.html">Interests</a>
+    <a href="recommendations.html">Exhibits</a>
+    <a href="details.html">Exhibit Details</a>
+    <a href="favourites.html">Favourites</a>
+    <a href="route.html">Visit Route</a>
+
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover History, Explore Stories</h1>
+
+            <p>
+                Explore fascinating artifacts, discover ancient
+                civilizations and experience history in a new way.
+            </p>
+
+            <button onclick="exploreExhibits()">
+                Explore Exhibits
+            </button>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <h2>Find Your Favourite Exhibits</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for an exhibit..."
+            onkeyup="searchExhibits()"
+        >
+    </section>
+
+    <section class="interests" id="interests">
+        <h2>Explore Your Interests</h2>
+        <p>Choose what interests you the most.</p>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <span>🏛️</span>
+                <h3>Indian History</h3>
+            </div>
+
+            <div class="category-card">
+                <span>🌍</span>
+                <h3>World History</h3>
+            </div>
+
+            <div class="category-card">
+                <span>🏺</span>
+                <h3>Ancient Artifacts</h3>
+            </div>
+
+            <div class="category-card">
+                <span>🎨</span>
+                <h3>Art and Sculptures</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="exhibits" id="exhibits">
+        <h2>Featured Exhibits</h2>
+        <p>Discover some interesting pieces from history.</p>
+
+        <div class="exhibit-container">
+
+            <div class="exhibit-card">
+                <img src="sculpture.jpg"
+                      alt="Ancient Sculptures">
+
+                <div class="card-content">
+                    <h3>Ancient Sculptures</h3>
+                    <p>Explore the artistic heritage of ancient civilizations.</p>
+                    <a href="details.html?exhibit=ashoka">View Details</a>
+                </div>
+            </div>
+
+            <div class="exhibit-card">
+                <img src="Historical artifacts.jpg"
+                     alt="Historical artifacts">
+
+                <div class="card-content">
+                    <h3>Historical Artifacts</h3>
+                    <p>Discover objects that tell stories of the past.</p>
+                    <a href="details.html?exhibit=indus">View Details</a>
+                </div>
+            </div>
+
+            <div class="exhibit-card">
+                <img src="ancient-art.jpg"
+                     alt="Ancient artwork">
+
+                <div class="card-content">
+                    <h3>Ancient Art</h3>
+                    <p>Experience the creativity of different cultures.</p>
+                    <a href="details.html?exhibit=mughal">View Details</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Museum Explorer | Discover. Learn. Explore.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Exhibits - Museum Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Museum Explorer</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="interests.html">Interests</a>
+            <a href="recommendations.html">Exhibits</a>
+            <a href="favourites.html">Favourites</a>
+            <a href="route.html">Visit Route</a>
+        </nav>
+    </header>
+
+    <section class="exhibits-section">
+
+        <h2>Discover Amazing Exhibits</h2>
+        <p>Explore historical objects, ancient art and fascinating stories.</p>
+
+        <div class="exhibit-container">
+
+            <div class="exhibit-card">
+                <img src="Indus valley.jpg" alt="Indus Valley Pottery">
+                <h3>Indus Valley Pottery</h3>
+                <p>Indian History</p>
+                <p>Discover pottery and objects from the Indus Valley Civilization.</p>
+                <a href="details.html?exhibit=indus">View Details</a>
+                <button onclick="addToFavourites('Indus Valley Pottery')">
+                Add to Favourites
+                </button>
+            </div>
+
+            <div class="exhibit-card">
+                <img src="Ashoka Pillar.jpg" alt="Ashoka Pillar">
+                <h3>Ashoka Pillar</h3>
+                <p>Indian History</p>
+                <p>Learn about the famous pillars built during Emperor Ashoka's reign.</p>
+                <a href="details.html?exhibit=ashoka">View Details</a>
+                <button onclick="addToFavourites('Ashoka Pillar')">
+                Add to Favourites
+                </button>
+            </div>
+
+            <div class="exhibit-card">
+                <img src="Greek.jpg" alt="Greek Architecture">
+                <h3>Greek Architecture</h3>
+                <p>World History</p>
+                <p>Explore the architecture of ancient Greek civilization.</p>
+                <a href="details.html?exhibit=greek">View Details</a>
+                <button onclick="addToFavourites('Greek Architecture')">
+                Add to Favourites
+                </button>
+                </div>
+
+            <div class="exhibit-card">
+                <img src="Egyptian artifacts.jpg" alt="Egyptian Artifacts">
+                <h3>Egyptian Artifacts</h3>
+                <p>Ancient Artifacts</p>
+                <p>Discover objects and traditions from ancient Egypt.</p>
+                <a href="details.html?exhibit=egypt">View Details</a>
+                <button onclick="addToFavourites('Egyptian Artifacts')">
+                Add to Favourites
+                </button>
+            </div>
+
+            <div class="exhibit-card">
+                <img src="Mughal painting.jpg" alt="Mughal Paintings">
+                <h3>Mughal Paintings</h3>
+                <p>Paintings and Art</p>
+                <p>Explore beautiful paintings from the Mughal period.</p>
+                <a href="details.html?exhibit=mughal">View Details</a>
+                <button onclick="addToFavourites('Mughal Paintings')">
+                Add to Favourites
+                </button>
+            </div>
+
+            <div class="exhibit-card">
+                <img src="Mystery.jpg" alt="Mystery Artifacts">
+                <h3>Mysterious Ancient Objects</h3>
+                <p>Mystery Artifacts</p>
+                <p>Explore objects whose history and purpose remain uncertain.</p>
+                <a href="details.html?exhibit=mystery">View Details</a>
+                <button onclick="addToFavourites('Mysterious Ancient Objects')">
+                Add to Favourites
+                </button>
+            </div>
+
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
